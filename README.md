@@ -16,7 +16,7 @@
 ```
 所需的数据格式如下：
 ```
-var data = [
+    var data = [
         {
             fileName:"123",  //文件名
             children:[   //子文件
@@ -45,7 +45,7 @@ var data = [
             children:null
         }
     ]
-    ```
+```
     调用如下方法如下：
     fileManage(id,data)
     id为类名为.file-wrapper的div的id
