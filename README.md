@@ -1,5 +1,9 @@
 # fileManager
 一个简单的jQuery文件树管理demo
+## 效果图
+![image](https://github.com/TheresaTang/fileManager/blob/master/example.png
+)
+
 调用非常简单，只需在页面中引入相应css文件及js文件，并加上一下代码即可：
 ```
 <div class="file-wrapper" id="file-wrapper">
