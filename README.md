@@ -45,6 +45,8 @@ var data = [
             children:null
         }
     ]
-    调用如下方法如下：
+    
+    ```
+    调用如下方法如下：
     fileManage(id,data)
     id为类名为.file-wrapper的div的id
