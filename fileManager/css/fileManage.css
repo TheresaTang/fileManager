@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+
+a,a:after,a:active{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+.file-wrapper{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.crumbsNav-list:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.crumbsNav-list .crumbsNav-item{
+    float: left;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #999;
+}
+.crumbsNav-list .crumbsNav-item:last-child,.crumbsNav-list .crumbsNav-item:hover{
+    color: #333;
+}
+.crumbsNav-list .crumbsNav-item span{
+    font-size: 16px;
+}
+.file-wrapper .file-list{
+    width: 100%;
+    display: none;
+}
+.file-wrapper>.file-list{
+    display: block;
+}
+.file-wrapper .file-list:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.file-list .file-item{
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.file-list .file-item .file-box{
+    padding: 10px;
+}
+.file-list .file-item.active .file-box{
+    background-color: #eee;
+}
+.file-list .file-item .file-box:hover{
+    background-color: #eee;
+}
+.file-item .file-box .filePic{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: url("../images/folderFull.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    cursor: pointer;
+}
+.file-item .file-box .filePic img{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.file-item.folder .file-box{
+    width: 100px;
+}
+.file-item.folder .file-box .filePic{
+    background-image: url(../images/folder.png);
+}
+.file-item.pptFile .file-box .filePic{
+    background-image: url(../images/pptxPic.png);
+}
+.file-item.docFile .file-box .filePic{
+    background-image: url(../images/docxPic.png);
+}
+.file-item.excelFile .file-box .filePic{
+    background-image: url(../images/xlsxPic.png);
+}
+.file-item.pdfFile .file-box .filePic{
+    background-image: url(../images/pdfPic.png);
+}
+.file-item.zipFile .file-box .filePic{
+    background-image: url(../images/zipPic.png);
+}
+.file-item.rarFile .file-box .filePic{
+    background-image: url(../images/rarPic.png);
+}
+.file-item.textFile .file-box .filePic{
+    background-image: url(../images/textPic.png);
+}
+.file-item .file-box .fileName{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

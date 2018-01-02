@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/fileManage.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="file-wrapper" id="file-wrapper">
+    <ul class="crumbsNav-list">
+        <li class="crumbsNav-item">
+            <div class="name">全部<span>&gt;</span></div>
+        </li>
+    </ul>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script src="./js/file.js"></script>
+<script>
+
+    var data = [
+        {
+            fileName:"123",
+            children:[
+                {
+                    fileName:"456.doc",
+                    fileUrl:"./456.doc",
+                    children:null
+                },{
+                    fileName:"你好",
+                    children:[
+                        {
+                            fileName:"我们.xls",
+                            fileUrl:"./我们.xls",
+                            children:null
+                        },{
+                            fileName:"我们.png",
+                            fileUrl:"./images/404img_05.gif",
+                            children:null
+                        }
+                    ]
+                }
+            ]
+        },{
+            fileName:"明天.ppt",
+            fileUrl:"./明天.ppt",
+            children:null
+        }
+    ]
+    fileManage("file-wrapper",data)
+</script>
+</body>
+</html>
