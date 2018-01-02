@@ -1,6 +1,7 @@
 # fileManager
 一个简单的jQuery文件树管理demo
 调用非常简单，只需在页面中引入相应css文件及js文件，并加上一下代码即可：
+```
 <div class="file-wrapper" id="file-wrapper">
     <ul class="crumbsNav-list">
         <li class="crumbsNav-item">
@@ -8,7 +9,9 @@
         </li>
     </ul>
 </div>
+```
 所需的数据格式如下：
+```
 var data = [
         {
             fileName:"123",  //文件名
@@ -41,6 +44,3 @@ var data = [
     调用如下方法如下：
     fileManage(id,data)
     id为类名为.file-wrapper的div的id
-    效果图如下：
-    
-
