@@ -45,7 +45,6 @@ var data = [
             children:null
         }
     ]
-    
     ```
     调用如下方法如下：
     fileManage(id,data)
