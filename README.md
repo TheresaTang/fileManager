@@ -45,7 +45,7 @@
             children:null
         }
     ]
-```
-    调用如下方法如下：
-    fileManage(id,data)
-    id为类名为.file-wrapper的div的id
+``` 
+> 调用如下方法如下：</br>
+fileManage(id,data)</br>
+id为类名为.file-wrapper的div的id
